@@ -1,4 +1,23 @@
-# Getting Started with Create React App
+# 使い方
+- 右上の*code*から*create new repository*を選択
+- localに*clone*する
+## rust側の処理
+- terminalにて，`cargo install wasm-pack`してwasm-packをインストール
+- `cd wasm-lib/`で遷移
+- `wasm-pack build --target web`でwasmにbuild
+
+## react側の処理
+- projectのルートに戻る ex:`cd ..`
+- `package.json`の5行目の`"homepage":`を`"homepage":https://{username.github.io}/{repository name}`とする．
+- `npm install`
+- gh-pagesをインストール　`npm install gh-pages --save-dev`
+- `npm run deploy`でデプロイされる
+- 上記のhomepageにアクセスすると見れる
+
+
+
+# Getting Started with Create React 
+App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
